@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Task"
+        android:textSize="@dimen/_17sdp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+      >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:textColorHint="#FF4081"
+                >
+
+                <EditText
+                    android:id="@+id/etTaskName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="Task Name"
+                    android:textColor="#000"
+                    android:background="@drawable/round_shape_white"
+                    android:textColorHint="#000"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:textColorHint="#FF4081"
+                >
+
+                <EditText
+                    android:id="@+id/etTaskDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:background="@drawable/round_shape_white"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="Task Description"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+           android:background="@drawable/round_shape_white"
+            >
+
+            <Spinner
+                android:id="@+id/spinnerTariffCalculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:textColorHint="#FF4081"
+                >
+
+                <EditText
+                    android:id="@+id/etStartDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:singleLine="true"
+                    android:background="@drawable/round_shape_white"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="Start Date"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:textColorHint="#FF4081"
+                >
+
+                <EditText
+                    android:id="@+id/etEndDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="End Date"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:background="@drawable/round_shape_white"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:textColorHint="#FF4081"
+                >
+
+                <EditText
+                    android:id="@+id/etTaskCreateDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/round_shape_white"
+                    android:hint="Task Create Date"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                >
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Task Status"
+                    android:textColor="#FF4081"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/tvspanish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    android:textColor="#2821F3"
+                    android:onClick="radio_button_click"
+                    />
+                <RadioButton
+                    android:id="@+id/tvfrench"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textColor="#2821F3"
+                    android:onClick="radio_button_click"
+                    />
+                <RadioButton
+                    android:id="@+id/tvmalayalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Running"
+                    android:textColor="#2821F3"
+                    android:onClick="radio_button_click"
+                    />
+            </RadioGroup>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:text="Add Task"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/shahp_round_corner"
+        android:textSize="@dimen/_15sdp" />
+</LinearLayout>

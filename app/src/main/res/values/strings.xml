@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Task Management</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="Settings">Settings</string>
+    <string name="logout">Log out</string>
 </resources>

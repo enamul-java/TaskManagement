@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTaskName"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:textColor="@color/Block"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rtv_bg"
+        android:text="Task Name"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rtv_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Task Description"
+        android:textColor="@color/Block"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_1sdp"/>
+
+    <TextView
+        android:id="@+id/tvTaskPriority"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:background="@drawable/rtv_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Task Priority"
+        android:textColor="@color/Block"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:textColor="@color/Block"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rtv_bg"
+        android:text="Start Date"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_1sdp"/>
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:textColor="@color/Block"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rtv_bg"
+        android:text="End Date"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_1sdp"/>
+    <TextView
+        android:id="@+id/tvTaskStatus"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:textColor="@color/Block"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rtv_bg"
+        android:text="Task Status"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_1sdp"/>
+    <TextView
+        android:id="@+id/tvTaskCreateDate"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:textColor="@color/Block"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rtv_bg"
+        android:text="Task Create Date"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_1sdp"/>
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Edit"/>
+
+</LinearLayout>
