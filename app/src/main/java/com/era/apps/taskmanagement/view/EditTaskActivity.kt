@@ -49,7 +49,7 @@ class EditTaskActivity : AppCompatActivity() {
             }
         )
 
-        btnAddNewTask!!.setOnClickListener(View.OnClickListener {
+        btnEditTask!!.setOnClickListener(View.OnClickListener {
 //            val phone = editTextLoginPhone!!.getText().toString().trim { it <= ' ' }
 //            val password = editTextLoginPassword!!.getText().toString().trim { it <= ' ' }
             var id: Int = radio_group.checkedRadioButtonId

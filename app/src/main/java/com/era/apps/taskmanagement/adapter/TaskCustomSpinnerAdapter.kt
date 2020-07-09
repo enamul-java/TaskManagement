@@ -11,7 +11,6 @@ import com.era.apps.taskmanagement.model.SpinnerDataModel
 
 class TaskCustomSpinnerAdapter(val context: Context, var listItemsTxt: Array<SpinnerDataModel>) : BaseAdapter() {
     val mInflater: LayoutInflater = LayoutInflater.from(context)
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View
         val vh: ItemRowHolder
