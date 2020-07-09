@@ -21,11 +21,13 @@ class AddTaskActivity : AppCompatActivity() {
     private var etTaskCreateDate:EditText? = null
     private var btnAddNewTask:AppCompatButton? = null
 
-    var spinnerdata: SpinnerDataModel = SpinnerDataModel("High","1")
-    var spinnerdata1: SpinnerDataModel = SpinnerDataModel("Medium","2")
-    var spinnerdata2: SpinnerDataModel = SpinnerDataModel("Low","3")
+    var spinnerdata: SpinnerDataModel = SpinnerDataModel("Select Task Priority","1")
+    var spinnerdata1: SpinnerDataModel = SpinnerDataModel("High","2")
+    var spinnerdata2: SpinnerDataModel = SpinnerDataModel("Medium","3")
+    var spinnerdata3: SpinnerDataModel = SpinnerDataModel("Low","4")
 
-    val listItemsTxt = arrayOf(spinnerdata,spinnerdata1,spinnerdata2)
+    val listItemsTxt = arrayOf(spinnerdata,spinnerdata1,spinnerdata2,spinnerdata3)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_task)
@@ -43,13 +45,7 @@ class AddTaskActivity : AppCompatActivity() {
         radio_group.setOnCheckedChangeListener(
             RadioGroup.OnCheckedChangeListener{
                     group, checkedId ->
-
                 val radio_langange: RadioButton = findViewById(checkedId)
-
-
-                Toast.makeText(applicationContext," On Checked change :${radio_langange.text}",Toast.LENGTH_SHORT).show()
-
-
             }
         )
 
@@ -63,30 +59,23 @@ class AddTaskActivity : AppCompatActivity() {
                 Toast.makeText(this,"On button click : ${radio.text}", Toast.LENGTH_SHORT).show()
             }else{
 
-                Toast.makeText(this,"On button click : nothing selected",
-                    Toast.LENGTH_SHORT).show()
             }
 
         })
 
         var spinnerAdapter: TaskCustomSpinnerAdapter = TaskCustomSpinnerAdapter(this!!, listItemsTxt)
-        // var spinner: Spinner = findViewById(R.id.spinnerTariffCalculator) as Spinner
         spinnerTariffCalculator?.adapter = spinnerAdapter
 
         spinnerTariffCalculator?.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
 
-
-            } // to close the onItemSelected
-
+            }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
             }
         })
     }
     fun radio_button_click(view: View){
-
         val radio: RadioButton = findViewById(radio_group.checkedRadioButtonId)
-        Toast.makeText(applicationContext,"On click : ${radio.text}", Toast.LENGTH_SHORT).show()
     }
 }

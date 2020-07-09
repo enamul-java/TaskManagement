@@ -1,15 +1,20 @@
 package com.era.apps.taskmanagement.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.era.apps.taskmanagement.R
 import com.era.apps.taskmanagement.model.TaskRecyclerModel
+import java.security.AccessController.getContext
 
-class TaskRecyclerAapter(val taskList: ArrayList<TaskRecyclerModel>): RecyclerView.Adapter<TaskRecyclerAapter.ViewHolder>() {
+
+class TaskRecyclerAapter(context: Context,val taskList: ArrayList<TaskRecyclerModel>): RecyclerView.Adapter<TaskRecyclerAapter.ViewHolder>() {
+    private var context: Context? = null
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
         val v = LayoutInflater.from(parent?.context).inflate(R.layout.task_recycler_itemview, parent, false)
         return ViewHolder(v);
@@ -29,8 +34,9 @@ class TaskRecyclerAapter(val taskList: ArrayList<TaskRecyclerModel>): RecyclerVi
         holder?.txtEndDate.text= taskList[position].endDate
         holder?.txtTaskStatus.text= taskList[position].taskStatus
         holder?.txtTaskCreateDate.text= taskList[position].taskCreateDate
-        holder?.btnEdit
-
+        holder?.btnEdit!!.setOnClickListener{
+            //Toast.makeText(getContext(),"EditButtonClick",Toast.LENGTH_LONG).show()
+        }
 
 
     }

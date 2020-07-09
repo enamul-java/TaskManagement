@@ -1,9 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.EditTaskActivity">
+    android:background="@drawable/bg2"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/etEditTaskName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="Task Name"
+                android:textColor="#2821F3"
+                android:textSize="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/etEditTaskDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="Task Description"
+                android:textColor="#2821F3"
+                android:textSize="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rtv_bg"
+            >
+
+            <Spinner
+                android:id="@+id/spinnerTariffCalculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/etEditStartDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="Start Date"
+                android:textColor="#2821F3"
+                android:textSize="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/etEditEndDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="End Date"
+                android:textColor="#2821F3"
+                android:textSize="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/etEditTaskCreateDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:hint="Task Create Date"
+                android:textColor="#2821F3"
+                android:textSize="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Task Status"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000"
+                />
+
+            <RadioButton
+                android:id="@+id/tvDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="#2821F3"
+                android:onClick="radio_button_click"
+                />
+            <RadioButton
+                android:id="@+id/tvPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="#2821F3"
+                android:onClick="radio_button_click"
+                />
+            <RadioButton
+                android:id="@+id/tvRunning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Running"
+                android:textColor="#2821F3"
+                android:onClick="radio_button_click"
+                />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:text="Update Task"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/shahp_round_corner"
+        android:textSize="@dimen/_15sdp" />
+</LinearLayout>

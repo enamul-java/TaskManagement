@@ -30,8 +30,8 @@ class LoginActivity : AppCompatActivity() {
         buttonLogin = findViewById(R.id.btnLogin) as AppCompatButton
         textViewRegister = findViewById(R.id.tvRegister) as TextView
         buttonLogin!!.setOnClickListener(View.OnClickListener {
-            val phone = editTextLoginPhone!!.getText().toString().trim { it <= ' ' }
-            val password = editTextLoginPassword!!.getText().toString().trim { it <= ' ' }
+//            val phone = editTextLoginPhone!!.getText().toString().trim { it <= ' ' }
+//            val password = editTextLoginPassword!!.getText().toString().trim { it <= ' ' }
             startActivity(Intent(this, DashboardActivity::class.java))
 
         })

@@ -4,13 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     android:gravity="center">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add New Task"
-        android:textSize="@dimen/_17sdp"
+        android:textSize="@dimen/_20sdp"
         android:textColor="#000"
         android:textStyle="bold"
         />
@@ -20,6 +20,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
       >
 
 
@@ -29,13 +30,6 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:textColorHint="#FF4081"
-                >
-
                 <EditText
                     android:id="@+id/etTaskName"
                     android:layout_width="fill_parent"
@@ -44,13 +38,10 @@
                     android:singleLine="true"
                     android:padding="@dimen/_10sdp"
                     android:hint="Task Name"
-                    android:textColor="#000"
-                    android:background="@drawable/round_shape_white"
-                    android:textColorHint="#000"
-                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#2821F3"
+                    android:textSize="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_10sdp"
                     />
-            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
 
@@ -61,6 +52,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
        >
 
 
@@ -71,28 +63,19 @@
             android:gravity="center_vertical"
             >
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:textColorHint="#FF4081"
-                >
 
                 <EditText
                     android:id="@+id/etTaskDescription"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableTint="#FF4081"
-                    android:background="@drawable/round_shape_white"
                     android:singleLine="true"
                     android:padding="@dimen/_10sdp"
                     android:hint="Task Description"
-                    android:textColor="#000"
-                    android:textColorHint="#000"
-                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#2821F3"
+                    android:textSize="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_10sdp"
                     />
-            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
 
@@ -103,6 +86,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         >
 
 
@@ -111,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-           android:background="@drawable/round_shape_white"
+           android:background="@drawable/rtv_bg"
             >
 
             <Spinner
@@ -129,6 +113,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         >
 
 
@@ -138,28 +123,18 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:textColorHint="#FF4081"
-                >
-
                 <EditText
                     android:id="@+id/etStartDate"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableTint="#FF4081"
                     android:singleLine="true"
-                    android:background="@drawable/round_shape_white"
                     android:padding="@dimen/_10sdp"
                     android:hint="Start Date"
-                    android:textColor="#000"
-                    android:textColorHint="#000"
-                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#2821F3"
+                    android:textSize="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_10sdp"
                     />
-            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
 
@@ -170,6 +145,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         >
 
 
@@ -179,13 +155,6 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:textColorHint="#FF4081"
-                >
-
                 <EditText
                     android:id="@+id/etEndDate"
                     android:layout_width="fill_parent"
@@ -194,13 +163,10 @@
                     android:singleLine="true"
                     android:padding="@dimen/_10sdp"
                     android:hint="End Date"
-                    android:textColor="#000"
-                    android:textColorHint="#000"
-                    android:background="@drawable/round_shape_white"
-                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#2821F3"
+                    android:textSize="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_10sdp"
                     />
-            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
 
@@ -211,6 +177,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         >
 
 
@@ -220,12 +187,7 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:textColorHint="#FF4081"
-                >
+
 
                 <EditText
                     android:id="@+id/etTaskCreateDate"
@@ -234,14 +196,12 @@
                     android:drawableTint="#FF4081"
                     android:singleLine="true"
                     android:padding="@dimen/_10sdp"
-                    android:background="@drawable/round_shape_white"
                     android:hint="Task Create Date"
-                    android:textColor="#000"
-                    android:textColorHint="#000"
-                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#2821F3"
+                    android:textSize="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_10sdp"
                     />
-            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
 
 
@@ -265,8 +225,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Select Task Status"
-                    android:textColor="#FF4081"
                     android:textSize="@dimen/_15sdp"
+                    android:textColor="#000"
                     />
 
                 <RadioButton

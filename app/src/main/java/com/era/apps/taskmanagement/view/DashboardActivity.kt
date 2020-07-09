@@ -105,7 +105,7 @@ private fun initit(){
     tasks.add(TaskRecyclerModel("Amy", "Mrs","800000","G","M-6","16.01.2020","hiiso"))
     tasks.add(TaskRecyclerModel("Amy", "Mrs","5200152","C","M-3","13.01.2020","hiiso"))
 
-    var adapter = TaskRecyclerAapter(tasks)
+    var adapter = TaskRecyclerAapter(this,tasks)
     recyclerView!!.adapter = adapter
 }
 
